@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Wave Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    
+
+
+  </head>
+
+  <body>
+
+    <h1 class="heading">Visitors-App</h1>
+
+
+
+
+    <div class="container">
+
+      <h1>Please Enter Details</h1>
+
+
+      <form action="/" method="POST">
+
+
+
+
+        <div class="form-control">
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required />
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form-control">
+          <label for="number">Mobile Number: </label>
+          <input type="number" name="number" id="number" required />
+        </div>
+
+
+
+
+
+
+        <div class="radio-btns">
+
+          <label for="status">Status: </label>
+
+          <div class="radio1">
+            <label for="radio-1">Check In</label>
+            <input type="radio" name="check" id="checkIn" value="Check-In" required />
+          </div>
+
+          <div class="radio2">
+            <label for="radio-2">Check Out</label>
+            <input type="radio" name="check" id="checkOut" value="Check-Out" required />
+          </div>
+        </div>
+
+
+
+        <button class="btn" type="submit">Submit</button>
+
+
+
+        
+      </form>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      const labels = document.querySelectorAll(".form-control label");
+
+      labels.forEach(label => {
+        label.innerHTML = label.innerText
+        .split("")
+        .map((letter,index) => `<span style="transition-delay:${index * 50}ms;">${letter}</span>`)
+        .join('')
+
+      });
+
+    </script>
+
+
+
+  </body>
+</html>
