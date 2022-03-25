@@ -150,7 +150,7 @@ app.post("/", async(req, res) => {
     html: `<h3><strong> Hello ${req.body.name}! You have ${req.body.check} in the office at ${hours}:${minutes}:${seconds} on ${date}/${month}/${year}. </h3></strong>`
   };
 
-  //Hello Ashish! You have entered in the office at 2:34:14 PM on 5 October
+  //Hello Ashish! You have entered in the office at 2:34:14 PM on 3 October
 
 
 //ES6
